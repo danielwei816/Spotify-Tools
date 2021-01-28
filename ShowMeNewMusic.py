@@ -21,12 +21,12 @@ from threading import Timer
 SEARCH_CRITERIA = "TRACK" # What data to use to make recommendations, either TRACK or ARTIST
 PLAYLIST_LENGTH = 50 # minimum number of songs to include
 PLAYLIST_TITLE = "Show Me New Music"
-FILTER_PLAYLISTS = ["Not Rap", "i cant speak korean"]
+FILTER_PLAYLISTS = ["Rap", "etc."]
 
 # Authorization
 SCOPE = "user-top-read playlist-modify-private playlist-modify-public playlist-read-private user-library-modify user-library-read streaming app-remote-control user-modify-playback-state user-read-playback-state"
 REDIRECT_URI = "http://localhost:8888"
-token = util.prompt_for_user_token("danielwei816",
+token = util.prompt_for_user_token("USERNAME",
                                    SCOPE,
                                    client_id=CLIENT_ID,
                                    client_secret=CLIENT_SECRET,
